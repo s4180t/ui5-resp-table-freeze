@@ -12,3 +12,8 @@ th[data-second="X"] {
     left: 10.5rem;
     background: #ddd;
 }
+.freezeHeader thead {
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}

@@ -6,7 +6,7 @@
                 <layoutData>
                     <FlexItemData growFactor="1" />
                 </layoutData>
-                <Table items="{ path: '/tableData' }">
+                <Table items="{ path: '/tableData' }" class="freezeHeader">
                     <columns>
                         <Column width="10rem">
                             <customData>
