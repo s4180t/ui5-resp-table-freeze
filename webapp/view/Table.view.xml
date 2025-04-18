@@ -38,16 +38,8 @@
                     </columns>
                     <items>
                         <ColumnListItem>
-                            <Text text="{name}">
-                                <customData>
-                                    <core:CustomData key="first" value="X" writeToDom="true" />
-                                </customData>
-                            </Text>
-                            <Text text="{age}">
-                                <customData>
-                                    <core:CustomData key="second" value="X" writeToDom="true" />
-                                </customData>
-                            </Text>
+                            <Text text="{name}" class="first" />
+                            <Text text="{age}" class="second" />
                             <Text text="{occupation}" />
                             <Text text="{location}" />
                             <Text text="{experience}" />
