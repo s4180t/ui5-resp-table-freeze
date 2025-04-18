@@ -9,9 +9,15 @@
                 <Table items="{ path: '/tableData' }">
                     <columns>
                         <Column width="10rem">
+                            <customData>
+                                <core:CustomData key="first" value="X" writeToDom="true" />
+                            </customData>
                             <Label text="Name" />
                         </Column>
                         <Column width="10rem">
+                            <customData>
+                                <core:CustomData key="second" value="X" writeToDom="true" />
+                            </customData>
                             <Label text="Age" />
                         </Column>
                         <Column width="10rem">
