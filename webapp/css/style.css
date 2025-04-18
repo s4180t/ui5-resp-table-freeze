@@ -1,0 +1,12 @@
+td:has(span[data-first="X"]) {
+    position: sticky;
+    z-index: 1;
+    left: 0;
+    background: #ddd;
+}
+td:has(span[data-second="X"]) {
+    position: sticky;
+    z-index: 1;
+    left: 10.5rem;
+    background: #ddd;
+}

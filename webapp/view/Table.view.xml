@@ -1,0 +1,57 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="ui5resptablefreeze.controller.Table"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" enableScrolling="false">
+        <VBox renderType="Bare" height="100%">
+            <ScrollContainer vertical="true" horizontal="true">
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+                <Table items="{ path: '/tableData' }">
+                    <columns>
+                        <Column width="10rem">
+                            <Label text="Name" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Age" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Occupation" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Location" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Experience (Years)" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Email" />
+                        </Column>
+                        <Column width="10rem">
+                            <Label text="Phone Number" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <Text text="{name}">
+                                <customData>
+                                    <core:CustomData key="first" value="X" writeToDom="true" />
+                                </customData>
+                            </Text>
+                            <Text text="{age}">
+                                <customData>
+                                    <core:CustomData key="second" value="X" writeToDom="true" />
+                                </customData>
+                            </Text>
+                            <Text text="{occupation}" />
+                            <Text text="{location}" />
+                            <Text text="{experience}" />
+                            <Text text="{email}" />
+                            <Text text="{phone}" />
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </ScrollContainer>
+
+        </VBox>
+    </Page>
+</mvc:View>
